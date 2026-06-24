@@ -160,7 +160,7 @@
       async function loadPasienDropdown() {
         try {
           const response = await fetch(
-            "http://127.0.0.1:8000/api/rekam-medis",
+            "https://platformlayanankesehatandigital-production.up.railway.app/api/rekam-medis",
             {
               method: "GET",
               headers: {
@@ -204,7 +204,7 @@
 
           try {
             const response = await fetch(
-              "http://127.0.0.1:8000/api/booking-jadwal",
+              "https://platformlayanankesehatandigital-production.up.railway.app/api/booking-jadwal",
               {
                 method: "POST",
                 headers: {

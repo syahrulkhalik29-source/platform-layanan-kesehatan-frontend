@@ -133,7 +133,7 @@
       async function fetchJadwal() {
         try {
           const response = await fetch(
-            "http://127.0.0.1:8000/api/jadwal-dokter",
+            "https://platformlayanankesehatandigital-production.up.railway.app/api/jadwal-dokter",
             {
               method: "GET",
               headers: {
@@ -178,7 +178,7 @@
         if (confirm("Apakah Anda yakin ingin membatalkan jadwal temu ini?")) {
           try {
             const response = await fetch(
-              `http://127.0.0.1:8000/api/jadwal-dokter/delete/${id}`,
+              `https://platformlayanankesehatandigital-production.up.railway.app/api/jadwal-dokter/delete/${id}`,
               {
                 method: "GET", // Sesuai dengan rute web lama Anda
                 headers: {

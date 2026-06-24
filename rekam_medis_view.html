@@ -133,7 +133,7 @@
       async function fetchRekamMedis() {
         try {
           const response = await fetch(
-            "http://127.0.0.1:8000/api/rekam-medis",
+            "https://platformlayanankesehatandigital-production.up.railway.app/api/rekam-medis",
             {
               method: "GET",
               headers: {
@@ -177,7 +177,7 @@
         if (confirm("Apakah Anda yakin ingin menghapus catatan medis ini?")) {
           try {
             const response = await fetch(
-              `http://127.0.0.1:8000/api/rekam-medis/delete/${id}`,
+              `https://platformlayanankesehatandigital-production.up.railway.app/api/rekam-medis/delete/${id}`,
               {
                 method: "GET", // Sesuai rute web/api lama kamu
                 headers: {
